@@ -1,0 +1,377 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_master",
+      "name": "Luan (Administrador)",
+      "email": "luancamp953@gmail.com",
+      "passwordHash": "66e5863b81fbb0d01bed9591b981f7afddaed88af300551609f30296b9def6d3",
+      "role": "admin",
+      "status": "active",
+      "planId": "plan_vitalicio",
+      "planName": "Vitalício Master",
+      "planType": "vitalicio",
+      "createdAt": "2026-09-15T20:44:00.186Z",
+      "updatedAt": "2026-09-15T20:44:00.186Z",
+      "lastLoginAt": "2026-09-15T21:43:30.319Z"
+    },
+    {
+      "id": "usr_a976e92f-6",
+      "name": "Joao Silva",
+      "email": "joao@exemplo.com",
+      "passwordHash": "2d286c949bd60527beb54e7a8471972a8a36084df9475ffcd128d26ea66a888e",
+      "role": "user",
+      "status": "active",
+      "planId": "plan_vitalicio",
+      "planName": "Vitalício",
+      "planType": "vitalicio",
+      "installmentsPaid": 0,
+      "totalInstallments": 1,
+      "createdAt": "2026-09-15T20:44:18.870Z",
+      "updatedAt": "2026-09-15T20:44:18.870Z",
+      "lastLoginAt": "2026-09-15T20:44:18.870Z"
+    },
+    {
+      "id": "usr_f182413b-9",
+      "name": "Carlos Vendas",
+      "email": "carlos@empresa.com",
+      "passwordHash": "5abfd6d92ec5b418aaf155926909c4519004196779e8e36e3d480bf090b9d8ad",
+      "role": "user",
+      "status": "active",
+      "planId": "plan_vitalicio",
+      "planName": "Vitalício",
+      "planType": "vitalicio",
+      "installmentsPaid": 0,
+      "totalInstallments": 1,
+      "createdAt": "2026-09-15T21:43:23.233Z",
+      "updatedAt": "2026-09-15T21:43:23.233Z",
+      "lastLoginAt": "2026-09-15T21:43:26.994Z"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan_mensal",
+      "name": "Plano Mensal (12x)",
+      "description": "Acesso à Vende AI com pagamento mensal durante 12 parcelas.",
+      "price": 39.9,
+      "billing_type": "mensal",
+      "installments": 12,
+      "duration_months": 12,
+      "active": true,
+      "features": [
+        "Criador de sites com IA Gemini",
+        "Pesquisa de empresas reais com Google Maps",
+        "CRM de prospecção completo",
+        "Gerador de propostas para WhatsApp",
+        "Painel de controle de vendas"
+      ]
+    },
+    {
+      "id": "plan_vitalicio",
+      "name": "Vitalício",
+      "description": "Acesso vitalício irrestrito à Vende AI sem cobranças recorrentes.",
+      "price": 227,
+      "billing_type": "vitalicio",
+      "installments": 1,
+      "duration_months": 999,
+      "active": true,
+      "features": [
+        "Acesso vitalício completo",
+        "Geração ilimitada de prompts e sites",
+        "Busca avançada de empresas sem site",
+        "CRM de vendas e métricas em tempo real",
+        "Acesso a todas as futuras atualizações",
+        "Suporte prioritário"
+      ]
+    }
+  ],
+  "payments": [],
+  "websites": [],
+  "leads": [
+    {
+      "name": "Oficina Silva",
+      "niche": "Mecânica",
+      "city": "Campinas",
+      "phone": "19999999999",
+      "company_name": "Oficina Silva",
+      "category": "Mecânica",
+      "status": "novo",
+      "address": "",
+      "neighborhood": "",
+      "has_website": false,
+      "website_url": null,
+      "rating": 0,
+      "user_ratings_total": 0,
+      "external_place_id": null,
+      "id": "lead_e791f751-c",
+      "created_at": "2026-09-15T21:23:35.954Z",
+      "updated_at": "2026-09-15T21:23:35.954Z",
+      "notes": [],
+      "history": [
+        {
+          "id": "hist_74f6779a",
+          "from_status": "novo",
+          "to_status": "novo",
+          "changed_at": "2026-09-15T21:23:35.954Z",
+          "reason": "Lead salvo na prospecção"
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "sales": [],
+  "notifications": [
+    {
+      "id": "notif_1b7f7c15-a",
+      "user_id": "usr_admin_master",
+      "title": "Lead Salvo",
+      "message": "Empresa \"Oficina Silva\" adicionada aos seus leads.",
+      "type": "lead_saved",
+      "read": false,
+      "created_at": "2026-09-15T21:23:35.954Z"
+    },
+    {
+      "id": "notif_welcome_admin",
+      "user_id": "usr_admin_master",
+      "title": "Bem-vindo ao Vende AI",
+      "message": "Sistema inicializado com sucesso. Você possui acesso administrativo total.",
+      "type": "system",
+      "read": false,
+      "created_at": "2026-09-15T20:44:00.186Z"
+    }
+  ],
+  "admin_settings": {
+    "pix": {
+      "pix_key": "22116932700",
+      "receiver_name": "Vende AI - Luan",
+      "instruction": "Transfira o valor exato do plano escolhido e envie o comprovante abaixo para liberação imediata.",
+      "active": true
+    },
+    "gemini": {
+      "model": "gemini-3.8-flash",
+      "active": true,
+      "system_instruction": "Você é o motor de inteligência artificial de alta conversão da Vende AI, especialista em websites comerciais para empresas locais brasileiras.",
+      "has_api_key": false
+    },
+    "maps": {
+      "provider": "google_places",
+      "active": true,
+      "has_api_key": false
+    },
+    "features": {
+      "gemini_enabled": true,
+      "maps_enabled": true,
+      "crm_enabled": true,
+      "proposals_enabled": true,
+      "sales_enabled": true
+    },
+    "maintenance_mode": false
+  },
+  "activity_logs": [
+    {
+      "id": "log_a195ea0e-5",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:43:30.319Z"
+    },
+    {
+      "id": "log_48ca794f-1",
+      "user_id": "usr_f182413b-9",
+      "user_email": "carlos@empresa.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:43:26.994Z"
+    },
+    {
+      "id": "log_c5b90f63-f",
+      "user_id": "usr_f182413b-9",
+      "user_email": "carlos@empresa.com",
+      "action": "USER_REGISTERED",
+      "details": "Novo usuário registrado no plano Vitalício",
+      "created_at": "2026-09-15T21:43:23.233Z"
+    },
+    {
+      "id": "log_423c24bf-f",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:40:46.376Z"
+    },
+    {
+      "id": "log_1e203351-7",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:38:55.585Z"
+    },
+    {
+      "id": "log_97d820a4-a",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:24:34.466Z"
+    },
+    {
+      "id": "log_569de88f-e",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:23:35.841Z"
+    },
+    {
+      "id": "log_5a96af53-4",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:23:34.140Z"
+    },
+    {
+      "id": "log_b72983dd-0",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:23:31.921Z"
+    },
+    {
+      "id": "log_a114d83e-a",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:23:28.445Z"
+    },
+    {
+      "id": "log_4c633f9e-f",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:22:31.436Z"
+    },
+    {
+      "id": "log_e75da567-1",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:17:13.267Z"
+    },
+    {
+      "id": "log_b7dec8d0-3",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:17:02.953Z"
+    },
+    {
+      "id": "log_97673030-4",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:15:41.685Z"
+    },
+    {
+      "id": "log_97064d1c-5",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:14:55.744Z"
+    },
+    {
+      "id": "log_f1ca2749-3",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:14:44.449Z"
+    },
+    {
+      "id": "log_e6f3c486-c",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:14:29.249Z"
+    },
+    {
+      "id": "log_ffe8be57-c",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T21:12:56.179Z"
+    },
+    {
+      "id": "log_77b68907-a",
+      "user_id": "usr_a976e92f-6",
+      "user_email": "joao@exemplo.com",
+      "action": "USER_REGISTERED",
+      "details": "Novo usuário registrado no plano Vitalício",
+      "created_at": "2026-09-15T20:44:18.870Z"
+    },
+    {
+      "id": "log_fb028893-7",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "LOGIN",
+      "details": "Login efetuado com sucesso",
+      "created_at": "2026-09-15T20:44:14.768Z"
+    },
+    {
+      "id": "log_boot",
+      "user_id": "usr_admin_master",
+      "user_email": "luancamp953@gmail.com",
+      "action": "SYSTEM_BOOT",
+      "details": "Plataforma Vende AI inicializada e pronta para operações.",
+      "created_at": "2026-09-15T20:44:00.187Z"
+    }
+  ],
+  "ai_generations": [
+    {
+      "id": "aigen_0feaeaf3-3",
+      "user_id": "usr_admin_master",
+      "type": "website",
+      "model": "gemini-3.8-flash",
+      "status": "failed",
+      "error": "Gemini API não configurada ou desativada, usando gerador semântico interno",
+      "created_at": "2026-09-15T21:24:35.087Z"
+    },
+    {
+      "id": "aigen_df034aba-5",
+      "user_id": "usr_admin_master",
+      "type": "proposal",
+      "model": "gemini-3.8-flash",
+      "status": "failed",
+      "error": "Gemini API inativa, gerado pelo motor inteligente de propostas",
+      "created_at": "2026-09-15T21:24:35.027Z"
+    },
+    {
+      "id": "aigen_c453383e-b",
+      "user_id": "usr_admin_master",
+      "type": "website",
+      "model": "gemini-3.8-flash",
+      "status": "failed",
+      "error": "Gemini API não configurada ou desativada, usando gerador semântico interno",
+      "created_at": "2026-09-15T21:23:34.253Z"
+    },
+    {
+      "id": "aigen_77e5b1cc-a",
+      "user_id": "usr_admin_master",
+      "type": "proposal",
+      "model": "gemini-3.8-flash",
+      "status": "failed",
+      "error": "Gemini API inativa, gerado pelo motor inteligente de propostas",
+      "created_at": "2026-09-15T21:23:32.115Z"
+    }
+  ]
+}

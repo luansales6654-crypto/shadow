@@ -1,0 +1,6 @@
+{
+  "name": "Vende AI",
+  "description": "Plataforma SaaS de criação de sites, prospecção de clientes locais com Google Maps, IA Gemini e CRM de vendas.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
